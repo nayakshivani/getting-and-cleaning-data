@@ -114,17 +114,29 @@ Character f can be replaced with Frequency
 Character t can be replaced with Time
 
 names(extractedData)<-gsub("Acc", "Accelerometer", names(extractedData))
+
 names(extractedData)<-gsub("Gyro", "Gyroscope", names(extractedData))
+
 names(extractedData)<-gsub("BodyBody", "Body", names(extractedData))
+
 names(extractedData)<-gsub("Mag", "Magnitude", names(extractedData))
+
 names(extractedData)<-gsub("^t", "Time", names(extractedData))
+
 names(extractedData)<-gsub("^f", "Frequency", names(extractedData))
+
 names(extractedData)<-gsub("tBody", "TimeBody", names(extractedData))
+
 names(extractedData)<-gsub("-mean()", "Mean", names(extractedData), ignore.case = TRUE)
+
 names(extractedData)<-gsub("-std()", "STD", names(extractedData), ignore.case = TRUE)
+
 names(extractedData)<-gsub("-freq()", "Frequency", names(extractedData), ignore.case = TRUE)
+
 names(extractedData)<-gsub("angle", "Angle", names(extractedData))
+
 names(extractedData)<-gsub("gravity", "Gravity", names(extractedData))
+
 Here are the names of the variables in extractedData after they are edited
 
 names(extractedData)
